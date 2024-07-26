@@ -1,0 +1,12 @@
+{
+    "name": "job-monitor-action",
+    "version": "1.0.0",
+    "description": "A GitHub Action to monitor job status and wait",
+    "main": "index.js",
+    "dependencies": {
+      "@actions/core": "^1.10.0",
+      "@actions/github": "^5.0.0",
+      "axios": "^1.3.5"
+    }
+  }
+  

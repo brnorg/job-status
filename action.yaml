@@ -1,0 +1,18 @@
+name: 'Job Monitor Action'
+description: 'Monitors the status of another job and waits for a specific time after completion.'
+inputs:
+  job_name:
+    description: 'The name of the job to monitor.'
+    required: true
+    default: 'job2'
+  wait_time:
+    description: 'Time to wait after the job completes, in seconds.'
+    required: true
+    default: '30'
+  poll_interval:
+    description: 'Interval to check the job status, in seconds.'
+    required: false
+    default: '30'
+runs:
+  using: 'node20'
+  main: 'index.js'
